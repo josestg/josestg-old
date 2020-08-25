@@ -1,8 +1,9 @@
 ---
 title: "Contoh Post Menggunakan Markdown"
 summary: "Pelajari cara membuat server side rendering website dengan menggunakan Next, TypeScript, dan Markdown."
-image: images/example.png
+image: "/images/example.png"
 date: 1 Aug 2020
+latex: true
 ---
 
 Post ini adalah post uji coba yang digunakan selama _development_, oleh karena itu isi dari konten ini akan berfokus pada
@@ -46,7 +47,7 @@ Kita dapat menampilkan gambar, video, tabel, source code, dan _block-math_ pada 
 
 Contoh kalimat yang berada di atas sebuah gambar. Gambar yang ditampilkan dapat berasal dari external link dan internal link. Berikut ini adalah contoh gambar yang berasal dari internal link.
 
-![Gambar dari public/images](images/bot-arc.png)
+![Gambar dari public/images](/images/bot-arc.png)
 
 Contoh kalimat yang berada dibawah gambar sekaligus diatas sebuah gambar lain yang berasal dari external link.
 
