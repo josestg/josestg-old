@@ -1,4 +1,4 @@
-import { FC } from "react"
+import { FC, memo } from "react"
 import { Flex, Heading, Text, FlexProps, Image } from "@chakra-ui/core"
 
 import { Link } from "./Link"
@@ -10,7 +10,7 @@ interface Props extends FlexProps {
   content: Content
 }
 
-export const Post: FC<Props> = ({ content, ...rest }) => {
+export const Post: FC<Props> = memo(({ content, ...rest }) => {
   const { pickValue } = useColorModeValue()
   const textColor = pickValue("gray.600", "gray.300")
 
@@ -41,4 +41,4 @@ export const Post: FC<Props> = ({ content, ...rest }) => {
       )}
     </Flex>
   )
-}
+})

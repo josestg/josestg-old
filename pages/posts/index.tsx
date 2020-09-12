@@ -59,7 +59,7 @@ export default function PostsPage({ contents }: Props) {
   }
 
   return (
-    <Box>
+    <Box as="main">
       <Layout mb="10">
         <Heading size="2xl">Post</Heading>
         <Text mt="2" pr="8" color={pickValue("gray.600", "gray.300")}>
@@ -90,7 +90,7 @@ export default function PostsPage({ contents }: Props) {
           alignItems="center"
           direction="column"
         >
-          <Image mb="4" height="140px" src="/images/not-found.svg"></Image>
+          <Image my="4" height="140px" src="/images/not-found.svg"></Image>
           <Text fontSize="xl">
             <Text as="span" fontWeight="bold">
               {keyword}
