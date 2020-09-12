@@ -3,7 +3,7 @@ import { Heading } from "@chakra-ui/core"
 
 export default function IndexPage() {
   return (
-    <Layout>
+    <Layout as="main">
       <Heading>Hello, World!</Heading>
     </Layout>
   )
