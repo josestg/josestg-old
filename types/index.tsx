@@ -5,3 +5,8 @@ export interface PostMetadata {
   summary: string
   latex?: boolean
 }
+
+export interface Content extends PostMetadata {
+  slug: string
+  readTime: string
+}
